@@ -5,7 +5,7 @@
 //------ DEFINITION OF GLOBAL CONSTANTS AND VARIABLES OF BRKGA-QL --------
 
 
-std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
+std::mt19937 rng(0);
 
 // Input File
 int debug = 0;                              // 0 - run mode      		    1 - debug mode

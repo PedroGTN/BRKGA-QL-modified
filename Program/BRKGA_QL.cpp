@@ -5,6 +5,7 @@
 // *************************************************************************************/
 int main() 
 { 
+    rng.seed(1987);
     // file with test instances and input data
 	FILE *arqProblems; 
     arqProblems = fopen ("testScenario.csv", "r"); 
@@ -1026,7 +1027,7 @@ void FreeMemory()
 
 double randomico(double min, double max)
 {
-	return ((double)(rand()%10000)/10000.0)*(max-min)+min;
+	return ((double)(rng()%10000)/10000.0)*(max-min)+min;
 }
 
 int irandomico(int min, int max)
