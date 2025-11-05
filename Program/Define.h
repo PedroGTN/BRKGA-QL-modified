@@ -8,7 +8,7 @@
 std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
 
 // Input File
-int debug = 1;                              // 0 - run mode      		    1 - debug mode
+int debug = 0;                              // 0 - run mode      		    1 - debug mode
 int MAXTIME = 1;                            // maximum runtime
 int MAXRUNS =  1;                           // maximum number of runs of the method
 unsigned MAX_THREADS = 1;            		// number of threads

@@ -35,7 +35,7 @@
  Method: BRKGA_QL()
  Description: Apply the method BRKGA_QL to solve the problem
 *************************************************************************************/
-void BRKGA_QL();
+void BRKGA_QL(bool load, std::string tableName);
 
 /************************************************************************************
  Method: updateBestSolution()
@@ -132,5 +132,9 @@ double randomico(double min, double max);
  Description: Generate a int random number between min and max
 *************************************************************************************/
 int irandomico(int min, int max);
+
+void saveQtable(std::string name);
+
+void loadQtable(std::string name);
 
 #endif

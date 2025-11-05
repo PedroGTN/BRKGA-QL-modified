@@ -34,7 +34,8 @@ test: runTest
 clean:
 	$(RM) \
 	$(TARGETDIR)/BRKGA_QL.o \
-	$(TARGETDIR)/Problem.o
+	$(TARGETDIR)/Problem.o \
+	$(TARGETDIR)/runTest
     
 rebuild:
 	$(MAKE) clean
